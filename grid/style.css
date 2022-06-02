@@ -6,13 +6,56 @@
 :root{
     --body-color:#eee;
     --white-color:#fff;
+    --cart-color:#fff;
     --purple:#996ed9;
     --grey:#48556a;
     --navy:#19212e;
 }
-
+.dark-mode{
+    --body-color:#18191a;
+    --white-color:#eee;
+    --cart-color:#48556a;
+    --purple:#651bd4;
+    --grey:#242526;
+    --navy:#2d88ff;
+}
 body {
-   background: var(--body-color);
+    background: var(--body-color);
+}
+.toggler-wrap{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.checkbox{
+    display: none;
+}
+.label{
+    background-color: var(--grey);
+    width: 50px;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.3);
+}
+.ball{
+    position: absolute;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    top:2px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    transition: linear 0.2s;
+    transform: translateX(0px);
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
 }
 .container {
     max-width: 1200px;
@@ -23,7 +66,7 @@ body {
     gap: 30px;
 }
 .card {
-    background-color: var(--white-color);
+    background-color: var(--cart-color);
     border-radius: 10px;
     padding: 30px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
