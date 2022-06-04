@@ -1,0 +1,53 @@
+#navbar{
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    overflow: hidden;
+    height: 80px;
+}
+
+#navbar ul{
+    padding-bottom: 0.5rem;
+}
+
+#home #ape {
+    max-width: 50%;
+    height: auto;
+    border-radius: 100%;
+}
+
+#blank .items{
+    flex-direction: column;
+}
+
+#blank .items .item{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.musics {
+    flex-direction: column;  
+}
+
+.musics .music .music-image img{
+    height: 75%;
+    
+    border: 1px #062e51 solid;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+} 
+
+.musics .music .music-image span{
+    background: #062e51;
+    padding: 0.2rem;
+    color: white;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    font-size: 75%;
+    border-radius: 4px;
+}
+
+
+
+

@@ -1,0 +1,87 @@
+:root{
+    --navi:#062e51;
+    --mavi:#336ea2;
+    --lavi:#689ecc;
+    --beya:#fff;
+}
+.text-center{
+    text-align: center;
+}
+.heading-small{
+    font-size: 1rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-big{
+    font-size: 2rem;
+}
+
+/* Colors */
+.bg-dark-blue {
+    background: var(--navi);
+}
+.bg-light-blue{
+    background: var(--mavi);
+}
+.bg-lighter-blue{
+    background: var(--lavi);
+}
+
+/* Buttons */
+.btn{
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.5px; 
+}
+.btn-primary{
+    background-color: var(--mavi);
+    border: 1px solid var(--mavi);
+}
+.btn-primary:hover{
+    background-color: var(--beya);
+    color: var(--mavi);
+    border: 1px solid var(--mavi);
+}
+.btn-dark{
+    padding: 0.5rem 1.5rem;
+    background-color: var(--navi);
+}
+.btn-dark:hover{
+    background-color: var(--mavi);
+    color: var(--beya);
+}
+.btn-white{
+    padding: 0.5rem 1.5rem;
+    background-color: var(--beya);
+    color: var(--mavi);
+    width: 100%;
+    border: 1px solid var(--beya);
+}
+.btn-white:hover{
+    background-color: var(--mavi);
+    color: var(--beya);
+    border: 1px solid var(--navi);
+}
+
+/* Forms */
+.form-group{
+    padding: 0.25rem 0;
+}
+.form-group label{
+    display: block;
+}
+.form-control{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 5px;
+}
+
+/* Container */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
