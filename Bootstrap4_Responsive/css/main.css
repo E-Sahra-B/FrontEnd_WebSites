@@ -1,0 +1,276 @@
+/* ALL STYLES */
+:root{
+    --mavi:#1886c7;
+    --beyaz:#fff;
+    --siyah:#000;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+p{
+    font-size:14px;
+}
+h2{
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--mavi);
+}
+/* HOME SECTION */
+.navbar{
+    border-bottom:3px solid var(--mavi);
+}
+
+.navbar .navbar-brand{
+    color: var(--mavi);
+    font-size:30px;
+}
+
+.bg-dark{
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.nav-link{
+    color:var(--beyaz) !important;
+    transition: color .5s ease;
+}
+
+.nav-link:hover{
+    color: var(--mavi) !important;
+}
+
+#headerSection{
+    background: url("../images/655-2000x1333.jpg") no-repeat center center fixed ; 
+    background-size:cover;
+    height:100vh;
+}
+/* #headerSection .header-img{
+    position: absolute;
+    background:no-repeat center fixed cover;
+    height:100vh;
+    width: 100%;
+} */
+
+#headerSection .overlay{
+background-color: rgba(0, 0, 0, 0.4)
+}
+#headerSection .row{
+    height: 100vh;
+}
+#headerSection span{
+    color:var(--mavi) ;
+}
+#headerSection .btn-outline-primary{
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+#headerSection p{
+color: var(--beyaz);
+opacity: 0.7;
+}
+
+/* FEATURES SECTION */
+#features .feature-top {
+    font-size: 40px;
+    color: var(--mavi);
+    opacity: 0.7;
+}
+#features .feature-top:hover {
+    color:var(--mavi);
+    opacity: 1;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+
+/* HISTORY SECTION */
+#ourHistory h2{
+    border-left:5px solid var(--mavi);
+}
+#ourHistory .col-md-6{
+display: inline;
+}
+#ourHistory .btn-outline-primary{
+position: absolute;
+bottom: 0;
+}
+
+/* TEAM SECTION */
+#team .card{
+    border:none;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+#team .card:hover{
+    opacity: 1;
+}
+#team .fa-brands{
+    font-size:24px;
+}
+
+/* WHATWEDO SECTION */
+#whatweDo {
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("../images/code1.jpg");
+}
+#whatweDo .fa-brands{
+    font-size:32px;
+}
+
+/* CASE STUDY*/
+#caseStudy{
+background-color: #f4f5f9;
+line-height: 28px;
+}
+#caseStudy #caseArea{
+background-color: var(--beyaz);
+margin-top:40px;
+margin-right:-40px;
+z-index: 9999;
+padding: 40px;
+position: relative;
+min-height: 420px;
+}
+#caseStudy .caseArea i{
+    font-size: 40px;
+    color: var(--mavi);
+}
+#caseStudy .caseArea h3{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--mavi);
+}
+#caseStudy .caseArea button{
+    margin-top:30px;
+}
+#caseStudy .case-image{
+    margin-left: -40px;
+}
+
+/* PORTFOLIO SECTION*/
+#portfolio .col-md-3{
+    padding:0;
+    text-align: center;
+}
+#portfolio h4{
+    font-size:16px;
+    font-weight: 300;
+}
+#portfolio .fa{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#portfolio p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#portfolio .image-container{
+    position: relative;
+    cursor: pointer;
+}
+#portfolio .image-container .image-overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--mavi);
+    opacity: 0;
+    transition: 1s ease;
+}
+#portfolio .image-container:hover .image-overlay{
+opacity: .7;
+}
+#portfolio .image-text{
+    color: var(--beyaz);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* SLİDER */
+#slider{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("../images/carousel.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slider .quote {
+    color:rgba(24,134,199,.6);
+    margin-bottom: 30px;
+}
+#slider .carousel-item img{
+    opacity: .1;
+}
+#slider .blockquote-footer{
+    color:var(--mavi);
+}
+
+/* CONTACT SECTION */
+#contact{
+    background-color: #f4f5f9;
+    align-self: flex-start;
+}
+#contact .input-group-text{
+    width:55px;
+    border-radius: 0;
+    color:var(--beyaz);
+    background-color: #281193;
+}
+#contact input{
+    border-radius: 0;
+}
+#contact .fa-brands{
+    font-size:32px;
+    color: var(--mavi);
+    opacity: 0.7;
+}
+#contact .fa-brands:hover{
+    opacity: 1;
+}
+/* FOOTER SECTION */
+#main-footer{
+    color:var(--beyaz);
+    background-color: var(--siyah);
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px){
+    #ourHistory .btn{
+        position: relative;
+    }
+}
+@media screen and (max-width: 992px){
+    .display-3{
+        font-size: 48px;
+    }
+    #ourHistory h2{
+        margin-top:20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .display-3{
+        font-size: 32px;
+    }
+    #caseStudy #caseArea{
+        margin-right:0;
+    }
+    #caseStudy .case-image{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px){
+    .display-3{
+        font-size: 24px;
+    }
+}
