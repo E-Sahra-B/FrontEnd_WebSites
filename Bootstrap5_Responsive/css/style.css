@@ -49,3 +49,16 @@ section#latest .overlay i {
     opacity: 0;
     font-size: 2rem;
 }
+@media screen and (max-width: 576px){
+    #header{
+        margin-top: 50px;
+    }
+
+    #hero h1, #hero .spanh1{
+        font-size: 23px;
+    }
+
+    #hero .lead{
+        font-size: 11px;
+    }
+}
