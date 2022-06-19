@@ -5,6 +5,7 @@
     --lightDark:#1e1b31;
     --white:#fff;
     --bgcolor:#eee;
+    --fontColor:#333;
 }
 *{
     margin: 0;
@@ -233,8 +234,8 @@
     position: relative;
     background: var(--lightDark);
     min-height: 100vh;
-    width: calc(100% - 80px);
-    left: 80px;
+    width: calc(100% - 78px);
+    left: 78px;
     transition: all 0.5s ease;
 }
 .sidebar.open ~ .home-section{
@@ -283,8 +284,8 @@ nav .search-box input{
     height: 100%;
     width: 100%;
     outline: none;
-    background: #F5F6FA;
-    border: 2px solid #EFEEF1;
+    background: var(--white);
+    border: 2px solid var(--bgcolor);
     border-radius: 6px;
     font-size: 18px;
     padding: 0 15px;
@@ -307,8 +308,8 @@ nav .search-box .icon-search{
 .home-section nav .profile-details{
     display: flex;
     align-items: center;
-    background: #F5F6FA;
-    border: 2px solid #EFEEF1;
+    background: var(--white);
+    border: 2px solid var(--bgcolor);
     border-radius: 6px;
     height: 50px;
     min-width: 190px;
@@ -323,13 +324,13 @@ nav .profile-details img{
 nav .profile-details .admin_name{
     font-size: 15px;
     font-weight: 500;
-    color: #333;
+    color: var(--fontColor);
     margin: 0 10px;
     white-space: nowrap;
 }
 nav .profile-details i{
     font-size: 25px;
-    color: #333;
+    color: var(--fontColor);
 }
 .home-section .home-content{
     position: relative;
@@ -446,7 +447,7 @@ nav .profile-details i{
 }
 .sales-boxes .sales-details li a{
     font-size: 18px;
-    color: #333;
+    color: var(--fontColor);
     font-size: 400;
     text-decoration: none;
 }
@@ -490,7 +491,7 @@ nav .profile-details i{
     object-fit: cover;
     border-radius: 12px;
     margin-right: 10px;
-    background: #333;
+    background: var(--fontColor);
 }
 .sales-boxes .top-sales li a{
     display: flex;
@@ -501,7 +502,7 @@ nav .profile-details i{
 .price{
     font-size: 17px;
     font-weight: 400;
-    color: #333;
+    color: var(--fontColor);
 }
   /* Responsive Media Query */
 @media (max-width: 1240px) {
