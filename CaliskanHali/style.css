@@ -1,0 +1,445 @@
+:root{
+    --turkuaz:#2caae2;/*rgba(44, 170, 226, 1)*/
+    --turkuaz-o:rgba(44, 170, 226, .8);
+    --mavi:#194276; /*rgba(25, 66, 118, 1) */
+    --mavi-o:rgba(25, 66, 118, .7);
+    --beyaz:#f7f6f6;/*rgba(247, 246, 246, 1)*/
+    --beyaz-o:rgba(247, 246, 246, .8);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    background: #F4F7F9;
+    /* width: 1920px;
+    height: 1946px;
+    overflow: hidden; */
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 1202px;
+    margin: 0 auto;
+}
+
+body{
+    height: 1862px;
+    width: 1920px;
+}
+.navbar{
+    position:relative;
+    width: 1920px;
+}
+.navbar-resim{
+    position:absolute;
+    z-index: -11;
+}
+.navbarMaviResim{
+    position: absolute;
+    width: 2498px;
+    height: 1732px;
+    top:-961px;
+    left:-291px;
+    z-index: -12;
+    /* overflow: hidden;
+    object-position: 100% -300;
+    object-fit: cover;
+    object-fit: contain;
+    object-fit: none; */
+}
+.anasayfa{
+    position: absolute;
+    height: 135px;
+    width: 1920px;
+    background-color: var(--mavi-o);
+}
+
+.anasayfa .tel-mesai{
+    float: left;
+    display: flex;
+    margin-top: 31px;
+    height: 19px;
+    width: 431px;
+    align-items: center;
+    line-height: 19px;
+}
+.anasayfa .tel-mesai a{
+    color: var(--beyaz);
+    font-size: 14px;
+    align-items: center;
+    padding:31px 11px;
+}
+
+.search{
+    position: absolute;
+    left: 874px;
+    top: 22px;
+}
+.search input{
+    position: absolute;
+    height:38px;
+    width:353px;
+    background:var(--beyaz-o);
+    border:0;
+    border-radius:5px;
+    font-size:10px;
+    color:var(--mavi-o);
+    padding-left:15px;
+    z-index: 1;
+}
+.search .search-icon{
+    position:absolute;
+    top: 10px;
+    left: 315px;
+    width:20px;
+    height:20px;
+    display:flex;
+}
+.fiyatSube{
+    position: absolute;/**/
+    margin-top: 21px;
+}
+.fiyatSube .fiyatBtn{
+    position: relative;
+    margin-left: 945px;
+    width: 120px;
+    height: 38px;
+    background-color: var(--turkuaz);
+    color: var(--beyaz);
+    border-radius: 10px;
+}
+.fiyatSube .fiyatBtn  img{
+    position: absolute;
+    top: 7px;
+    left: 11px;
+}
+.fiyatSube .fiyatBtn h6{
+    margin-top: 13px;
+    margin-left: 34px;
+    display: inline-block;
+}
+.fiyatSube .subeBtn{
+    position: relative;
+    margin-top: -38px;
+    width: 120px;
+    height: 38px;
+    background-color: var(--turkuaz);
+    color: var(--beyaz);
+    border-radius: 10px;
+    margin-left: 1083px;
+}
+.fiyatSube .subeBtn img{
+    position: absolute;
+    top: 18px;
+    left: 96px;
+
+}
+.fiyatSube .subeBtn h6{
+    margin-top: 13px;
+    margin-left: 16px;
+    display: inline-block;
+
+}
+.menu{
+    position:absolute;
+    height: 134px;
+    width: 1202px;
+    background-color: var(--beyaz);
+    margin: 66px 0;
+    border-radius: 10px;
+    display: flex;
+    z-index: 1;
+}
+.menu ul{
+    display: flex;
+}
+.menu .logo img{
+    margin: 14px 121px 12px 46px;
+    height: 108px;
+    width: 175px;
+}
+.menu ul li a{
+    display: block;
+    color: var(--mavi);
+    justify-content: space-around;
+    margin-top: 52px;
+    text-align: center;
+    line-height: 38px;
+    height: 38px;
+    width: 120px;
+}
+.menu ul li:not(:last-child){
+    margin-right: 54px;
+}
+.menu ul li a:hover, .menu ul li a.active{
+    background-color: var(--turkuaz);
+    color: var(--beyaz);
+    border-radius: 10px;
+}
+/* Hizmetler */
+.hizmetler{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 558px;
+    width: 1065px;
+    margin: 0px 68px 91px 69px ;
+    padding-top: 483px;
+}
+.hizmetler .yikama{
+    position: relative;
+    height: 442px;
+    width: 305px;
+}
+.hizmetler .yikama .h-resim{
+    position: absolute;
+    top:19px;
+    left: 24px;
+}
+.hizmetler .yikama .h-button{
+    position: absolute;
+    display: block;
+    width: 295px;
+    height: 66px;
+    line-height: 66px;
+    background-color: var(--turkuaz-o);
+    color: var(--beyaz);
+    text-align: center;
+    border-radius: 50px;
+    font-size: 16px;
+    top: 121px;
+}
+.hizmetler .yikama .h-yazi{
+    color: var(--mavi);
+    padding: 15px 16px 25px 16px;
+    font-size: 14px;
+}
+.hizmetler .yikama .h-detay{
+    display: block;
+    width: 90px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    background-color: var(--turkuaz);
+    color: var(--beyaz);
+    font-size: 12px;
+    margin-left: 107px;
+    border-radius: 5px;
+}
+.hizmetler .h-detay.active, .hizmetler .h-detay:hover{
+    background-color: var(--mavi);
+}
+.hizmetler .koltukYikama{
+    top: 98px;
+}
+.slayts{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 359px;
+    width: 1054px;
+    margin: 571px 88px 136px 60px ;
+}
+.slayt{
+    position: relative;
+    width: 327px;
+    height: 359px;
+    color: var(--mavi);
+    border-radius: 10px;
+}
+.slayts .s-logo{
+    position: absolute;
+    top:12px;
+    left: 122px;
+}
+.slayts .s-baslik{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 122px;
+}
+.slayts .s-yazi{
+    width: 276px;
+    height: 98px;
+    margin-top: 33px;
+    margin-left: 25px;
+    font-size: 14px;
+}
+.slayts .s-devam{
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 26px;
+    text-align: end;
+    padding-right: 6px;
+    
+}
+.slayts .slayt.active, .slayts .slayt:hover{
+    background-color: white;
+}
+.slayts .s-resim-yazi{
+    margin-top: 30px;
+    background: url(img/slayt-cerceve.png) no-repeat;
+    display: flex;
+}
+.slayts .s-resim-yazi img{
+    padding: 3px 6px;
+}
+.slayts .s-resim-yazi p{
+    padding: 1px 0 20px 16px ;
+    font-size: 14px;
+}
+.slayts a{
+    color: var(--mavi);
+    font-size: 12px;
+}
+.ebulten{
+    position: relative;
+    width: 1920px;
+    height: 305px;
+    background-image: url(img/FooterResim.png);
+}
+.ebulten .bultenBtn, .ebulten span{
+    position: absolute;
+    width: 344px;
+    height: 37px;
+    background-color: #2caae2;
+    border-radius: 50px;
+    left: 789px;
+}
+.ebulten span{
+    /* z-index: 1; */
+    position: absolute;
+    background-color: var(--beyaz);
+    color: var(--mavi);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 65px;
+    top: -14px;
+    
+}
+.ebulten .bultenBtn{
+    position: relative;
+    top: 55px;
+    background-color: var(--beyaz);
+}
+.ebulten .bultenBtn input{
+    position: relative;
+    background-color: var(--beyaz);
+    color: var(--mavi-o)  ;
+    padding: 8px 18px;
+    /* line-height:37px ; */
+    border-radius: 50px;
+}
+.ebulten .bultenBtn a{
+    position: absolute;
+    width: 114px;
+    height: 37px;
+    line-height: 37px;
+    color:var(--beyaz);
+    background-color: var(--turkuaz);
+    font-size: 15px;
+    font-weight: bold;
+    left: 230px;
+    text-align: center;
+    border-radius: 50px;
+    /* z-index: 5; */
+}
+.ebulten img{
+    position: absolute;
+    display: block;
+    left:-131px;
+}
+.ebulten p{
+    position: absolute;
+    z-index: 1;
+    color: var(--beyaz);
+    font-size: 14px;
+}
+.ebulten .adres{
+    position: absolute;
+    top:129px;
+    width: 270px;
+    height: 61px;
+    align-items: center;
+    text-align: center;
+    line-height: 17px;
+    left: 828px;
+
+}
+.ebulten .f-menu{
+    top:218px;
+    left: 762px;
+}
+footer{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 1924px;
+    height: 31px;
+    background-color: var(--turkuaz);
+    color:var(--beyaz);
+    line-height: 31px;
+    font-size: 9px;
+}
