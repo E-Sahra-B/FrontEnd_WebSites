@@ -37,7 +37,7 @@ body {
     line-height: 1;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    font-family: 'Kanit';;
     background: #F4F7F9;
     /* width: 1920px;
     height: 1946px;
@@ -396,7 +396,7 @@ body{
     position: relative;
     width: 1920px;
     height: 305px;
-    background-image: url(img/FooterResim.png);
+    background-image: url(../img/FooterResim.png);
 }
 .ebulten .bultenBtn, .ebulten span{
     position: absolute;
@@ -412,7 +412,7 @@ body{
     color: var(--mavi);
     font-size: 15px;
     font-weight: bold;
-    padding: 11px 65px;
+    padding: 11px 55px;
     top: -14px;
 }
 .ebulten .bultenBtn{

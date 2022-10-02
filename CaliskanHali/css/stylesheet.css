@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('subset-Kanit-Black.woff2') format('woff2'),
+        url('subset-Kanit-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('subset-Kanit-Thin.woff2') format('woff2'),
+        url('subset-Kanit-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('subset-Kanit-Bold.woff2') format('woff2'),
+        url('subset-Kanit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('subset-Kanit-SemiBold.woff2') format('woff2'),
+        url('subset-Kanit-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('subset-Kanit-Italic.woff2') format('woff2'),
+        url('subset-Kanit-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('subset-Kanit-Medium.woff2') format('woff2'),
+        url('subset-Kanit-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
