@@ -98,12 +98,14 @@ body{
 }
 .navbarMaviResim{
     position: absolute;
-    width: 2498px;
+    height: 771px;
+    width: 1920px;
+    z-index: -12;
+    /* width: 2498px;
     height: 1732px;
     top:-961px;
     left:-291px;
-    z-index: -12;
-    /* overflow: hidden;
+    overflow: hidden;
     object-position: 100% -300;
     object-fit: cover;
     object-fit: contain;
@@ -169,6 +171,8 @@ body{
     background-color: var(--turkuaz);
     color: var(--beyaz);
     border-radius: 10px;
+    z-index: 99;
+    cursor: pointer;
 }
 .fiyatSube .fiyatBtn  img{
     position: absolute;
@@ -194,13 +198,42 @@ body{
     position: absolute;
     top: 18px;
     left: 96px;
-
 }
 .fiyatSube .subeBtn h6{
     margin-top: 13px;
     margin-left: 16px;
     display: inline-block;
-
+}
+.fiyatSube ul{
+    background-color: var(--turkuaz-o);
+    width: 120px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 40px;
+    left: 120;
+    transition: 250ms all;
+    border-radius: 10px;
+}
+.fiyatSube ul li {
+    position: relative;
+    height: 38px;
+}
+.fiyatSube ul li a{
+    display: block;
+    padding: 7px 12px;
+    color: var(--beyaz);
+    font-size: 14px;
+}
+.fiyatSube .fiyatBtn:hover, .fiyatSube .subeBtn:hover, .fiyatSube ul li:hover{
+    background-color: var(--mavi);
+    border-radius: 10px;
+}
+.fiyatSube .subeBtn:hover ul{
+    opacity: 1;
+    visibility: visible;
+    background-color: var(--turkuaz);
+    z-index: 100;
 }
 .menu{
     position:absolute;
@@ -332,6 +365,11 @@ body{
     padding-top: 40px;
     padding-bottom: 26px;
     text-align: end;
+    padding-right: 26px;
+    transition: 300ms padding-right;
+}
+.slayts .s-devam:hover{
+    color: #2caae2;
     padding-right: 6px;
     
 }
@@ -369,7 +407,6 @@ body{
     left: 789px;
 }
 .ebulten span{
-    /* z-index: 1; */
     position: absolute;
     background-color: var(--beyaz);
     color: var(--mavi);
@@ -377,7 +414,6 @@ body{
     font-weight: bold;
     padding: 11px 65px;
     top: -14px;
-    
 }
 .ebulten .bultenBtn{
     position: relative;
@@ -387,9 +423,8 @@ body{
 .ebulten .bultenBtn input{
     position: relative;
     background-color: var(--beyaz);
-    color: var(--mavi-o)  ;
+    color: var(--mavi-o) ;
     padding: 8px 18px;
-    /* line-height:37px ; */
     border-radius: 50px;
 }
 .ebulten .bultenBtn a{
@@ -404,12 +439,11 @@ body{
     left: 230px;
     text-align: center;
     border-radius: 50px;
-    /* z-index: 5; */
 }
 .ebulten img{
     position: absolute;
     display: block;
-    left:-131px;
+    /* left:-131px; */ /*Kapatıldı*/
 }
 .ebulten p{
     position: absolute;
@@ -426,7 +460,6 @@ body{
     text-align: center;
     line-height: 17px;
     left: 828px;
-
 }
 .ebulten .f-menu{
     top:218px;
